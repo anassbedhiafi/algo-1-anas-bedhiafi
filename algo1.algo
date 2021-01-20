@@ -1,0 +1,23 @@
+ALGORITHM checkpiont algo1
+VAR
+    i , nb_voy , nb_car , : INTEGER;
+    c: STRING ;
+BEGIN
+  REPEAT
+      write("write a sentence : ")
+      read(c)
+  UNTIL (c= ".")
+
+        nb_car = 0 ;
+
+  FOR i FROM 1 TO c.lenght STEP step  DO
+      IF (i=" ") THEN
+        nb_car+ = 1 ;
+      END_IF
+      IF (i= "a" or  i="e" or i="i" or i="o" or i="u" or i="y") THEN
+          nb_voy + =1 ; 
+      END_IF
+  END_FOR
+
+
+END 
